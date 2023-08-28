@@ -1,147 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@600;700;900&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f2ebe3;
+  background-color: #f2ebe3;
+}
+
+@media (min-width: 350px) and (orientation: landscape) {
+  body {
+    padding: 80px;
+  }
 }
 
 #CardComponent {
-    margin: 5vh 15px;
-    border-radius: 10px;
-    background-color: #ffffff;
+  margin: 5vh 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
-@media screen and (min-width: 600px) {
-    #CardComponent {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: 50vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 800px;
-        height: 550px;
-        border-radius: 10px;
-        background-color: #ffffff;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  #CardComponent {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
 }
 
 img {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
-@media screen and (min-width: 600px) {
-    #ImageContent {
-       width: 400px;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  #ImageContent {
+    width: 400px;
+  }
 }
 
-
-@media screen and (min-width: 600px) {
-    img {
-        height: 550px;
-        border-radius: 10px 0px 0px 10px;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  img {
+    height: 550px;
+    border-radius: 10px 0px 0px 10px;
+  }
 }
 
 #TextContent {
-    padding: 20px;
+  padding: 20px;
 }
 
-@media screen and (min-width: 600px) {
-    #TextContent {
-        width: 400px;
-        padding: 45px;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  #TextContent {
+    width: 400px;
+    padding: 45px;
+  }
 }
 
 #TextContent h1 {
-    margin-bottom: 15px;
-    font-family: 'Fraunces', sans-serif;
-    font-size: 2.3rem;
-    color: #1c232b;
+  margin-bottom: 15px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.3rem;
+  color: #1c232b;
 }
 
-
-@media screen and (min-width: 600px) {
-    #TextContent h1 {
-        margin-bottom: 20px;
-        padding-right: 50px;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  #TextContent h1 {
+    margin-bottom: 20px;
+    padding-right: 50px;
+  }
 }
 
 #TextContent p:first-child {
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 #TextContent p {
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 25px;
-    color: #6c7289;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  color: #6c7289;
 }
 
 #Prices {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
 }
 
 #Prices p:first-child {
-    margin-right: 20px;
-    letter-spacing: 0px;
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 900;
-    font-size: 2.3rem;
-    color: #3c8067;
+  margin-right: 20px;
+  letter-spacing: 0px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: #3c8067;
 }
 
 #Prices p:last-child {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 button {
-    background-image: url(assets/icon-cart.svg);
-    display: inline-block;
-    width: 100%;
-    height: 55px;
-    margin: 20px 0px;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    background-color: #3c8067;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
+  background-image: url(assets/icon-cart.svg);
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  margin: 20px 0px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #3c8067;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-@media screen and (min-width: 600px) {
-    button {
-        height: 60px;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  button {
+    height: 60px;
+  }
 }
 
 button img {
-    transform: translateY(20%);
-    margin-right: 15px;
-    width: 20px;
-    height: 20px;
+  transform: translateY(20%);
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
 }
 
-@media screen and (min-width: 600px) {
-    button:hover {
-        background-color: #1d4536;
-    }
+@media screen and (min-width: 600px) and (min-height: 438px) {
+  button:hover {
+    background-color: #1d4536;
+  }
 }
