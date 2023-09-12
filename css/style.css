@@ -13,6 +13,8 @@ body {
 @media (min-width: 350px) and (orientation: landscape) {
   body {
     padding: 80px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -20,6 +22,12 @@ body {
   margin: 5vh 15px;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+@media (min-width: 350px) and (orientation: landscape) {
+  #CardComponent {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 600px) and (min-height: 438px) {
